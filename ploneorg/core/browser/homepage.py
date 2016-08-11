@@ -5,6 +5,7 @@ from datetime import datetime
 from plone import api
 from random import shuffle
 
+
 class HomePage(BrowserView):
 
     def get_links(self):
@@ -35,8 +36,8 @@ class HomePage(BrowserView):
         pc = api.portal.get_tool('portal_catalog')
         result = pc.searchResults(
             portal_type='Image',
-            Subject={'query':['sponsor logo', 'premium sponsor',],
-                     'operator':'and'}
+            Subject={'query': ['sponsor logo', 'premium sponsor', ],
+                     'operator': 'and'}
         )
         result_list = list(result)
         shuffle(result_list)

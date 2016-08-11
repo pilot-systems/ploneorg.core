@@ -28,6 +28,7 @@ setup(
     extras_require={
         'test': ['plone.app.testing[robot]>=4.2.2'],
         'migration': ['ploneorg.migration'],
+        'develop': ['ipdb', 'ipython'],
     },
     install_requires=[
         'Py-StackExchange',
@@ -41,6 +42,7 @@ setup(
         'plone.app.vulnerabilities',
         'plone.directives.form',
         'ploneorg.theme',
+        'ploneorg.addonlisting',
         'pycountry',
         'requests',
         'setuptools',

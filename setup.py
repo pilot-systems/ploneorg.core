@@ -43,6 +43,7 @@ setup(
         'plone.directives.form',
         'ploneorg.theme',
         'ploneorg.addonlisting',
+        'ploneorg.releasesecurityinfo',
         'pycountry',
         'requests',
         'setuptools',
